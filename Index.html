@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Online Entrance Exam</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      </head>
+    <body>
+        <nav>
+            <!-- <h5>Home</h5> -->
+            <!-- <div>
+                <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+                <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+                <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+            </div> -->
+            
+            <!-- sidebar open button -->
+            <div>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()" href="javascript:void(0)">                
+                        <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+                        <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+                        <div style="height: 2px;width: 20px;background-color: white;margin: 5px;"></div>
+                    </button>                
+                  </div>
+                  </div>
+            </div>
+            <div>
+
+            </div>
+        </nav>
+        <div style="display: flex;">
+            <!-- sidebar -->
+            
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="dashBoard" onclick="dashBoard()" href="#" style="font-size:medium">Dashboard</a>
+            <a id="courses" onclick="openSubmenu()" href="#" style="font-size:medium">Courses</a>
+            <a id="courses1" onclick="closeSubmenu()" href="#" style="font-size:medium">Courses</a>
+            <ul id="submenu">
+                <a href="#" onclick="registerCourses()" style="font-size: small;">Register Courses</a>
+                <a href="#" onclick="outstandingCourses()" style="font-size: small;">Check Outstanding Courses</a>
+            </ul>
+            <a id="takeExam" onclick="takeExam()" href="#" style="font-size:medium">Take Examination</a>
+            <a id="downloadResult" onclick="downloadResult()" href="#" style="font-size:medium">Download Result</a>
+            <a id="" href="#" style="font-size:medium">Logout</a>
+          </div>
+        
+          <!-- Dashboard -->
+
+        <section id="content" style="width: 100%;">
+            <div style="display: flex;justify-content: space-between;">
+                <div style="display:flex">
+                    <div class="sm-box"></div>
+                    <div style="margin-top: 15px;">
+                        <h4>Analytics Dashboard</h4>
+                        <h6>This is a Dashboard</h6>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div class="sm-box"></div>
+                    <div class="sm-box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="cols">
+                    <h5>
+                        Total Courses
+                    </h5>
+                    <h3>
+                        3
+                    </h3>
+                </div>
+                <div class="col" id="cols1">
+                    <h5>
+                        Total Taken
+                    </h5>
+                    <h3>
+                        3
+                    </h3>
+                </div>
+                <div class="col" id="cols2">
+                    <h5>
+                        Total Examination
+                    </h5>
+                    <h3>
+                        46%
+                    </h3>
+                </div>
+              </div>
+        </section>
+        <!-- Courses -->
+
+        <section id="contentCourses" style="width: 100%;">
+           <h5 class="heading">Select your Courses:</h5>            
+        </section>
+
+        <!-- Register Courses -->
+
+        <section id="registerCourse" style="width: 100%;">
+            <h5 class="heading">Courses:</h5>   
+            <table style="margin: 10px;">
+                <tr>                    
+                <!-- <th style="font-size: 30px;">courses</th> -->
+                </tr>
+                <tr>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                </tr>
+                <tr>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                </tr>
+                <tr>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                    <td>ifsgjkf.bkbSZ</td>
+                </tr>
+            </table>         
+         </section>
+
+         <!-- Outstanding Courses -->
+         <section id="outstandingCourse" style="width: 100%;">
+            <h5 class="heading">Check Outstanding Courses:</h5>            
+         </section>
+
+        <!-- Take Exam  -->
+
+        <section id="takeExamination" style="width: 100%;">
+            <h5 class="heading">Take your Examination:</h5>             
+        </section>
+
+        <!-- Download Result -->
+
+        <section id="downloadResults" style="width: 100%;">
+            <h5 class="heading">Download your Result:</h5>             
+        </section>
+    
+        </div>
+        </body>
+<script>  
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "350px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.opacity = "0";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("main").style.opacity = "100";
+}  
+
+var cont = document.getElementById("content");
+var cours = document.getElementById("contentCourses");
+var take = document.getElementById("takeExamination");
+var res = document.getElementById("downloadResults");
+var cor1 = document.getElementById("courses");
+var cor2 = document.getElementById("courses1");
+var submenu = document.getElementById("submenu");
+var registerCourse0 = document.getElementById("registerCourse");
+var outstandingCourse0 = document.getElementById("outstandingCourse");
+
+//Dashboard
+function dashBoard(){
+    cont.style.opacity = "100";
+    cours.style.display = "none";
+    take.style.display = "none";
+    res.style.display = "none";
+    cont.style.display = "block";
+    submenu.style.display = "none";
+    outstandingCourse0.style.display = "none";
+    registerCourse0.style.display = "none";
+    // cours.style.width = "0%";
+//     var paragraphs = document.getElementsByTagName("h6");
+//   for (var i = 0; i < paragraphs.length; i++) {
+//     paragraphs[i].style.color = "red";
+//   }
+}
+
+//courses
+function coursesregister(){
+    cours.style.opacity = "100";
+    cours.style.display = "block";
+    take.style.display = "none";
+    res.style.display = "none";
+    cont.style.display = "none";
+    // cours.style.width = "0%";
+}
+
+//take exam
+function takeExam(){    
+    take.style.opacity = "100";
+    cours.style.display = "none";
+    take.style.display = "block";
+    res.style.display = "none";
+    cont.style.display = "none";
+    submenu.style.display = "none";
+    outstandingCourse0.style.display = "none";
+    registerCourse0.style.display = "none";
+    // cours.style.width = "0%";
+}
+
+//Download Result
+function downloadResult(){    
+    downloadResults.style.opacity = "100";
+    cours.style.display = "none";
+    take.style.display = "none";
+    res.style.display = "block";
+    cont.style.display = "none";
+    submenu.style.display = "none";
+    outstandingCourse0.style.display = "none";
+    registerCourse0.style.display = "none";
+    // cours.style.width = "0%";
+}
+
+// function dropDown(){
+//     var dropdown = document.getElementsById("courses");
+// var i;
+
+// for (i = 0; i < dropdown.length; i++) {
+//   dropdown[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     // var dropdownContent = this.nextElementSibling;
+//     if (dropdownContent.style.display === "block") {
+//       dropdownContent.style.display = "none";
+//     } else {
+//       dropdownContent.style.display = "block";
+//     }
+//   });
+// }
+// }
+
+function openSubmenu(){
+    cor2.style.opacity = "100";
+    cor1.style.display = "none";
+    cor2.style.display = "block";
+    submenu.style.display = "block"
+    submenu.style.opacity = "100"; 
+    // cor1.style.opacity = "0";
+}
+function closeSubmenu(){
+    cor1.style.opacity = "100";
+    cor1.style.display = "block";
+    cor2.style.display = "none";
+    submenu.style.display = "none"
+    cor2.style.opacity = "0";
+    submenu.style.opacity = "0"; 
+}
+
+function registerCourses(){
+    cont.style.opacity = "100";
+    cours.style.display = "none";
+    take.style.display = "none";
+    res.style.display = "none";
+    cont.style.display = "none";
+    registerCourse0.style.display = "block";
+    outstandingCourse0.style.display = "none";
+    // submenu.style.display = "none";
+}
+
+function outstandingCourses(){
+    cont.style.opacity = "100";
+    cours.style.display = "none";
+    take.style.display = "none";
+    res.style.display = "none";
+    cont.style.display = "none";
+    registerCourse0.style.display = "none";
+    outstandingCourse0.style.display = "block";
+    // submenu.style.display = "none";
+}
+</script>    
+
+</html>
