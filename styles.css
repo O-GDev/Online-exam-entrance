@@ -37,8 +37,8 @@ input:focus{
     outline: none;
   }
 form{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 nav{
   box-shadow: 2px 2px 3px 2px #888888;
